@@ -1,0 +1,48 @@
+
+
+
+<p>This is the partial for view 1.</p>
+
+<div class="text-right">
+<table class="table">
+<thead>
+	  <tr>    	
+	  	<th scope="col">ID</th>
+	  		  	<th>NAME</th>
+	  		  		  	<th>AGE</th>
+	  		  		  		  	<th>FIRST NAME</th>
+	  		  		  		  		  	<th>LAST NAME</th>
+	  		  		  		  		  		  	<th>ROLL NUMBER</th>
+
+
+
+
+
+
+</tr>
+</thead>
+<tbody><tr ng-repeat="row in employees">
+        <td>{{row.id}}</td>
+        <td >{{row.name}}</td>
+          <td>{{row.age}}</td>
+        <td >{{row.firstname}}</td>
+                 <td >{{row.lastname}}</td>
+                                  <td >{{row.rollnumber}}</td>
+
+                         <!--td ><a href="#!/view2/{{row.id}}">EDIT</a></td>
+
+                                                  <td ><a ng-click="delete(row.id)" href="#">DELETE</a></td-->
+
+
+
+
+    </tr>
+
+
+</tbody>
+
+
+    
+</table>
+
+</div>

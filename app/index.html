@@ -19,12 +19,24 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="text-center">
   <ul class="menu">
-    <li><a href="#!/view3">NEW STUDENT</a></li>
-    <li><a href="#!/view1">VIEW ALL STUDENT</a></li>
-    <li><a href="#!/view4">EDIT STUDENT</a></li>
-    <li><a href="#!/view5">DELETE STUDENT</a></li>
+    <li><a href="#!/view1">Manage Students</a></li>
+    <!--li><a href="#">Manage Users</a></li-->
+    <li><a href="#">Classes & Subjects</a></li>
+    <li><a href="#">Offline Exams</a></li>
+     <li><a href="#">Online Exams</a></li>
+    <li><a href="#">Students Attendances</a></li>
+    <li><a href="#">Library</a></li>
+    <li><a href="#">Manage Office</a></li>
+     <li><a href="#">Accounts</a></li>
+    <li><a href="#!/transport">Transports</a></li>
+    <li><a href="#!/studyMaterial">Study Materials</a></li>
+    <li><a href="#">Dormitories</a></li>
+        <!--li><a href="#">Global Settings</a></li-->
+
   </ul>
+</div>
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -32,7 +44,7 @@
 
   <div ng-view></div>
 
-  <div>AngularJS seed app: v<span app-version></span></div>
+  <div><span app-version></span></div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
@@ -40,12 +52,18 @@
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
+    <script src="Welcome_Page/welcomepage.js"></script>
+
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
     <script src="view3/view3.js"></script>
     <script src="view4/view4.js"></script>
         <script src="view5/view5.js"></script>
                 <script src="view6/view6.js"></script>
+                                <script src="establishment/establishment.js"></script>
+
+                                <script src="transport/transport.js"></script>
+                                <script src="studyMaterial/studymaterial.js"></script>
 
 
   <script src="core/version/version.js"></script>

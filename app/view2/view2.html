@@ -1,5 +1,56 @@
-<p>This is the partial for view 2.</p>
+<p>This is the partial for view 3.</p>
 <p>
   Showing of 'interpolate' filter:
   {{ 'Current version is v%VERSION%.' | interpolate }}
 </p>
+
+
+	
+<div class="text-center">
+	<h5>Registration Form</h5>
+
+	<form>
+    
+  <div class="form-group row">
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Name:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control form-control-lg" id="colFormLabelLg" ng-model="employee.name">
+      
+    </div>
+  </div>
+   <div class="form-group row">
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">First Name:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control form-control-lg" id="colFormLabelLg" ng-model="employee.firstname" >
+    </div>
+  </div>
+   <div class="form-group row">
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Last Name:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control form-control-lg" id="colFormLabelLg" ng-model="employee.lastname"
+       >
+    </div>
+  </div>
+    <div class="form-group row">
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Roll Number:</label>
+    <div class="col-sm-10">
+ <input type="text" class="form-control form-control-lg" id="colFormLabelLg" ng-model="employee.rollnumber">
+    </div>
+  </div>
+   <div class="form-group row">
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Age:</label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control form-control-lg" id="colFormLabelLg" ng-model="employee.age" >
+    </div>
+  </div>
+              <!--input type="button" value="Edit Data" ng-click="update(employee)"-->
+                            <input type="button" value="Add Data" ng-click="create(employee)">
+
+
+</form>
+</div>
+
+
+
+
+

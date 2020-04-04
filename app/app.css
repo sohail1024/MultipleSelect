@@ -5,15 +5,16 @@
   border-bottom: 0.1em solid black;
   margin-bottom: 2em;
   padding: 0 0 0.5em;
+  background: aquamarine;
 }
 
-.menu:before {
+/*.menu:before {
   content: "[";
 }
 
 .menu:after {
   content: "]";
-}
+}*/
 
 .menu > li {
   display: inline;

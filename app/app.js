@@ -18,6 +18,8 @@ angular.module('myApp', [
                 'myApp.transport',
                 'myApp.studyMaterial',
                                 'myApp.manageOffice',
+                    'myApp.dormitories',
+
 
 
 

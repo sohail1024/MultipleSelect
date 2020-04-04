@@ -17,6 +17,8 @@ angular.module('myApp', [
         'myApp.establishment',
                 'myApp.transport',
                 'myApp.studyMaterial',
+                                'myApp.manageOffice',
+
 
 
   'myApp.version'

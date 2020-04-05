@@ -19,8 +19,7 @@ angular.module('myApp', [
                 'myApp.studyMaterial',
                                 'myApp.manageOffice',
                     'myApp.dormitories',
-
-
+                                        'myApp.studentslistrequest',
 
 
   'myApp.version'

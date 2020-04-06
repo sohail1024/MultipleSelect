@@ -296,3 +296,4 @@ For more information on AngularJS please check out [angularjs.org][angularjs].
 [travis]: https://travis-ci.org/
 [travis-docs]: https://docs.travis-ci.com/user/getting-started
 # CRUD_Operations
+# MultipleSelect

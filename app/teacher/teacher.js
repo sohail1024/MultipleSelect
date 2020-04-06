@@ -1,15 +1,15 @@
 'use strict';
 
-angular.module('myApp.view1', ['ngRoute'])
+angular.module('myApp.teacher', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {
-    templateUrl: 'view1/view1.html',
-    controller: 'View1Ctrl'
+  $routeProvider.when('/teacher', {
+    templateUrl: 'teacher/teacher.html',
+    controller: 'TeacherCtrl'
   });
 }])
 
-.controller('View1Ctrl', ['$scope','$http',function($scope,$http) {
+.controller('TeacherCtrl', ['$scope','$http',function($scope,$http) {
 //alert("this is view1")
  $scope.employees = [];
  $scope.form = {
@@ -20,7 +20,7 @@ angular.module('myApp.view1', ['ngRoute'])
  $scope.refreshPageData=function() {
                     $http({
                         method : 'GET',
-                        url : 'http://localhost:3000/students'
+                        url : 'http://localhost:3000/teacher'
                     }).then(function successCallback(response) {
                         $scope.employees = response.data;
                     }, function errorCallback(response) {
@@ -31,11 +31,11 @@ angular.module('myApp.view1', ['ngRoute'])
                 $scope.delete=function(id) {
                     $http({
                         method : 'DELETE',
-                        url : 'http://localhost:3000/students/'+id
+                        url : 'http://localhost:3000/teacher/'+id
                     }).then(function successCallback(response) {
                         $scope.employee = response.data ;
-                        alert('student information successfully removed');
-                                                window.location.href="#!/view1"
+                        alert('teacher information successfully removed');
+                    window.location.href="#!/teacher"
 
                         location.reload();
 

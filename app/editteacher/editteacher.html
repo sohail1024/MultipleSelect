@@ -1,3 +1,4 @@
+
 <p>This is the partial for view 3.</p>
 <p>
   Showing of 'interpolate' filter:
@@ -12,26 +13,26 @@
 	<form>
     
   <div class="form-group row">
-    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Name:</label>
+<label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Teacher_Name:</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control form-control-lg" id="colFormLabelLg" ng-model="employee.name">
+      <input type="text" class="form-control form-control-lg" id="colFormLabelLg" ng-model="employee.teachername">
       
     </div>
   </div>
    <div class="form-group row">
-    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">First Name:</label>
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Teacher_Phone:</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control form-control-lg" id="colFormLabelLg" ng-model="employee.firstname" >
+      <input type="text" class="form-control form-control-lg" id="colFormLabelLg" ng-model="employee.teacherphone" >
     </div>
   </div>
    <div class="form-group row">
-    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Last Name:</label>
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Teacher_Subject:</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control form-control-lg" id="colFormLabelLg" ng-model="employee.lastname"
+      <input type="text" class="form-control form-control-lg" id="colFormLabelLg" ng-model="employee.teachersubjects"
        >
     </div>
   </div>
-    <div class="form-group row">
+    <!--div class="form-group row">
     <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Roll Number:</label>
     <div class="col-sm-10">
  <input type="text" class="form-control form-control-lg" id="colFormLabelLg" ng-model="employee.rollnumber">
@@ -42,9 +43,11 @@
     <div class="col-sm-10">
       <input type="number" class="form-control form-control-lg" id="colFormLabelLg" ng-model="employee.age" >
     </div>
-  </div>
-              <input type="button" value="Save" ng-click="update(employee)">
-                            <!--input type="button" value="Delete Data" ng-click="delete(employee)"-->
+  </div-->
+              <!--input type="button" value="Edit Data" ng-click="update(employee)"-->
+                            <input type="button" value="Save" ng-click="update(employee)">
+                         <!--input type="button" value="Cancel" ng-click="gotolist()"-->
+
 
 
 </form>

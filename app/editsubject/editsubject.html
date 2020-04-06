@@ -1,0 +1,84 @@
+
+<p>This is the partial for view 3.</p>
+<p>
+  Showing of 'interpolate' filter:
+  {{ 'Current version is v%VERSION%.' | interpolate }}
+</p>
+
+
+	
+<div class="text-center">
+	<h5>Registration Form</h5>
+
+	<form>
+    
+  <div class="form-group row">
+<label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Subject_Name:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control form-control-lg" id="colFormLabelLg" ng-model="employee.subname">
+      
+    </div>
+  </div>
+   <div class="form-group row">
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Main_Books:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control form-control-lg" id="colFormLabelLg" ng-model="employee.mainbooks" >
+    </div>
+  </div>
+   <!--div class="form-group row">
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Last Name:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control form-control-lg" id="colFormLabelLg" ng-model="employee.lastname"
+       >
+    </div>
+  </div>
+    <div class="form-group row">
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Roll Number:</label>
+    <div class="col-sm-10">
+ <input type="text" class="form-control form-control-lg" id="colFormLabelLg" ng-model="employee.rollnumber">
+    </div>
+  </div>
+   <div class="form-group row">
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Age:</label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control form-control-lg" id="colFormLabelLg" ng-model="employee.age" >
+    </div>
+  </div-->
+              <!--input type="button" value="Edit Data" ng-click="update(employee)"-->
+                            <input type="button" value="Save" ng-click="update(employee)">
+                         <!--input type="button" value="Cancel" ng-click="gotolist()"-->
+
+
+
+</form>
+
+</div>
+<form action="#" method="post" id="demoForm" class="demoForm">
+    <fieldset>
+        <legend>Demo: Get Selected Options</legend>
+    
+        <p>
+            <select ng-model="sel" size="4" multiple>
+                <option value="scroll">Scrolling Divs JavaScript</option>
+                <option value="tooltip">JavaScript Tooltips</option>
+                <option value="con_scroll">Continuous Scroller</option>
+                <option value="banner">Rotating Banner JavaScript</option>
+                <option value="random_img">Random Image PHP</option>
+                <option value="form_builder">PHP Form Generator</option>
+                <option value="table_class">PHP Table Class</option>
+                <option value="order_forms">PHP Order Forms</option>
+            </select>
+            <input type="button" value="Submit" ng-click="getSelectedOptions()"/>
+            <!--textarea name="display" ng-model="" placeholder="view select list value(s) onchange" cols="20" rows="4" readonly></textarea-->
+            <select ng-model="sel1" size="4" multiple>
+                                <option value="scroll">Scrolling Divs JavaScript</option>
+
+            </select>
+        </p>
+        
+    </fieldset>
+</form>
+
+
+
+

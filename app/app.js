@@ -20,6 +20,18 @@ angular.module('myApp', [
                                 'myApp.manageOffice',
                     'myApp.dormitories',
                                         'myApp.studentslistrequest',
+                   'myApp.subject',
+                                      'myApp.addsubject',
+                           'myApp.editsubject',
+                                                      'myApp.editteacher',
+
+                           'myApp.teacher',
+                                                      'myApp.addteacher',
+
+
+
+
+
 
 
   'myApp.version'

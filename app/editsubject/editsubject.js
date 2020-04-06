@@ -1,21 +1,21 @@
 'use strict';
 
-angular.module('myApp.view2', ['ngRoute'])
+angular.module('myApp.editsubject', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view2', {
-    templateUrl: 'view2/view2.html',
-    controller: 'View2Ctrl'
+  $routeProvider.when('/editsubject/:id', {
+    templateUrl: 'editsubject/editsubject.html',
+    controller: 'EditSubjectCtrl'
   });
 }])
 
-.controller('View2Ctrl', ['$scope','$routeParams','$http',function($scope,$routeParams,$http) {
-$scope.rollnumber=$routeParams.rollnumber;
+.controller('EditSubjectCtrl', ['$scope','$routeParams','$http',function($scope,$routeParams,$http) {
+$scope.id=$routeParams.id;
 $scope.employee={};
 $scope.refreshPageData=function() {
                     $http({
                         method : 'GET',
-                        url : 'http://localhost:3000/students/'+$scope.rollnumber
+                        url : 'http://localhost:3000/subject/'+$scope.id
                     }).then(function successCallback(response) {
                         $scope.employee = response.data;
                     }, function errorCallback(response) {
@@ -23,10 +23,17 @@ $scope.refreshPageData=function() {
                     });
 
 }
+$scope.sel = [];
+$scope.sel1 = [];
+
+$scope.getSelectedOptions = function()  {
+$scope.sel1 = $scope.sel; 
+}
+// example callback function (selected options passed one by one)
 
 $scope.update=function(){
             
-            var url = 'http://localhost:3000/students/'+$scope.rollnumber, data = $scope.employee,
+            var url = 'http://localhost:3000/subject/'+$scope.id, data = $scope.employee,
             config='contenttype';
 
 $http.put(url, data, config).then(function (response) {
@@ -35,17 +42,17 @@ $http.put(url, data, config).then(function (response) {
 
 }).then(function successCallback(response) {
                        // $scope.employee = response.data ;
-                        alert('student info updated');
-                        window.location.href="www.google.com"
+                        alert('subject info updated');
+                        window.location.href="#!/subject"
 
                     }, function errorCallback(response) {
                         console.log(response.statusText);
                     });
-  ;
+  
                 }
                 $scope.create=function(){
             
-            var url = 'http://localhost:3000/students', data = $scope.employee,
+            var url = 'http://localhost:3000/subject', data = $scope.employee,
             config='contenttype';
 
 $http.post(url, data, config).then(function (response) {
@@ -54,8 +61,8 @@ $http.post(url, data, config).then(function (response) {
 
 }).then(function successCallback(response) {
                         //$scope.employee = response.data ;
-                        alert('student info added');
-                        window.location.href="#!/view1"
+                        alert('subject  added');
+                        window.location.href="#!/subject"
 
                     }, function errorCallback(response) {
                         console.log(response.statusText);
@@ -82,5 +89,6 @@ $http.post(url, data, config).then(function (response) {
   }
 
 $scope.refreshPageData();
+
 
 }]);

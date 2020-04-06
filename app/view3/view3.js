@@ -36,7 +36,7 @@ $http.put(url, data, config).then(function (response) {
 }).then(function successCallback(response) {
                        // $scope.employee = response.data ;
                         alert('student info updated');
-                        window.location.href="www.google.com"
+                        window.location.href="#!/view1"
 
                     }, function errorCallback(response) {
                         console.log(response.statusText);

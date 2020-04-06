@@ -1,21 +1,21 @@
 'use strict';
 
-angular.module('myApp.view2', ['ngRoute'])
+angular.module('myApp.addsubject', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view2', {
-    templateUrl: 'view2/view2.html',
-    controller: 'View2Ctrl'
+  $routeProvider.when('/addsubject', {
+    templateUrl: 'addsubject/addsubject.html',
+    controller: 'AddSubjectCtrl'
   });
 }])
 
-.controller('View2Ctrl', ['$scope','$routeParams','$http',function($scope,$routeParams,$http) {
-$scope.rollnumber=$routeParams.rollnumber;
+.controller('AddSubjectCtrl', ['$scope','$routeParams','$http',function($scope,$routeParams,$http) {
+$scope.id=$routeParams.id;
 $scope.employee={};
 $scope.refreshPageData=function() {
                     $http({
                         method : 'GET',
-                        url : 'http://localhost:3000/students/'+$scope.rollnumber
+                        url : 'http://localhost:3000/subject/'+$scope.id
                     }).then(function successCallback(response) {
                         $scope.employee = response.data;
                     }, function errorCallback(response) {
@@ -26,7 +26,7 @@ $scope.refreshPageData=function() {
 
 $scope.update=function(){
             
-            var url = 'http://localhost:3000/students/'+$scope.rollnumber, data = $scope.employee,
+            var url = 'http://localhost:3000/students/'+$scope.id, data = $scope.employee,
             config='contenttype';
 
 $http.put(url, data, config).then(function (response) {
@@ -45,7 +45,7 @@ $http.put(url, data, config).then(function (response) {
                 }
                 $scope.create=function(){
             
-            var url = 'http://localhost:3000/students', data = $scope.employee,
+            var url = 'http://localhost:3000/subject', data = $scope.employee,
             config='contenttype';
 
 $http.post(url, data, config).then(function (response) {
@@ -54,8 +54,8 @@ $http.post(url, data, config).then(function (response) {
 
 }).then(function successCallback(response) {
                         //$scope.employee = response.data ;
-                        alert('student info added');
-                        window.location.href="#!/view1"
+                        alert('subject  added');
+                        window.location.href="#!/subject"
 
                     }, function errorCallback(response) {
                         console.log(response.statusText);

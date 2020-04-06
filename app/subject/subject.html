@@ -1,0 +1,56 @@
+
+
+
+
+
+
+
+
+
+
+    <a href="#!/addsubject">Add Subject</a>
+
+
+<div class="text-right">
+<table class="table">
+<thead>
+	  <tr>    	
+	  	<th scope="col">Subject_Id</th>
+	  		  	<th>Subject_Name</th>
+	  		  		  	<th>Main_Books</th>
+	  		  		  		  	<!--th>Student_Address</th>
+	  		  		  		  		  	<th>Student_Email</th>
+	  		  		  		  		  		  	<th>Student_Password</th-->
+
+
+
+
+
+
+</tr>
+</thead>
+<tbody><tr ng-repeat="row in employees">
+        <td>{{row.id}}</td>
+        <td >{{row.subname}}</td>
+          <td>{{row.mainbooks}}</td>
+        <!--td >{{row.firstname}}</td>
+                 <td >{{row.lastname}}</td>
+                                  <td >{{row.rollnumber}}</td-->
+
+                         <td ><a href="#!/editsubject/{{row.id}}">EDIT</a></td>
+
+                      <td ><a ng-click="delete(row.id)" href="#">DELETE</a></td>
+
+
+
+
+    </tr>
+
+
+</tbody>
+
+
+    
+</table>
+
+</div>

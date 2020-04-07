@@ -26,9 +26,9 @@ $scope.refreshPageData=function() {
 $scope.sel = [];
 $scope.sel1 = [];
 
-$scope.getSelectedOptions = function()  {
+/*$scope.getSelectedOptions = function()  {
 $scope.sel1 = $scope.sel; 
-}
+}*/
 // example callback function (selected options passed one by one)
 
 $scope.update=function(){

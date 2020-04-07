@@ -89,7 +89,9 @@
   "subject": [
     {
       "subname": "mathematics",
-      "mainbooks": "ncert",
+      "mainbooks": [
+        "Physics NCERT"
+      ],
       "id": 1
     },
     {
@@ -99,7 +101,9 @@
     },
     {
       "subname": "chemistry",
-      "mainbooks": "ncert",
+      "mainbooks": [
+        "Mathematics NCERT"
+      ],
       "id": 3
     },
     {
@@ -113,6 +117,88 @@
       "teacherphone": "1234567890",
       "teachersubjects": "Physics",
       "id": 5
+    },
+    {
+      "subname": "Maths",
+      "id": 6
+    },
+    {
+      "subname": "Maths",
+      "id": 7
+    },
+    {
+      "subname": "Physics",
+      "id": 8
+    },
+    {
+      "subname": "Maths",
+      "id": 9
+    },
+    {
+      "subname": "Maths",
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "subname": "Maths",
+      "id": 13
+    },
+    {
+      "subname": "maths",
+      "id": 14
+    },
+    {
+      "subname": "maths",
+      "id": 15
+    },
+    {
+      "id": 16
+    },
+    {
+      "id": 17
+    },
+    {
+      "mainbooks": [
+        "Mathematics NCERT"
+      ],
+      "id": 19
+    },
+    {
+      "subname": "Maths",
+      "mainbooks": [
+        "Mathematics NCERT",
+        "Physics NCERT"
+      ],
+      "id": 20
+    },
+    {
+      "subname": "Physics",
+      "mainbooks": [
+        "Physics NCERT"
+      ],
+      "id": 21
+    },
+    {
+      "subname": "Chemistry",
+      "mainbooks": [
+        "Physics NCERT"
+      ],
+      "id": 22
+    },
+    {
+      "subname": "Biology",
+      "mainbooks": [
+        "Mathematics NCERT",
+        "Physics NCERT",
+        "Chemistry NCERT",
+        "Biology NCERT"
+      ],
+      "id": 23
     }
   ],
   "teacher": [

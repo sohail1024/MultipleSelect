@@ -12,7 +12,7 @@ angular.module('myApp.addsubject', ['ngRoute'])
 .controller('AddSubjectCtrl', ['$scope','$routeParams','$http',function($scope,$routeParams,$http) {
 $scope.id=$routeParams.id;
 $scope.employee={};
-$scope.refreshPageData=function() {
+/*$scope.refreshPageData=function() {
                     $http({
                         method : 'GET',
                         url : 'http://localhost:3000/subject/'+$scope.id
@@ -22,11 +22,18 @@ $scope.refreshPageData=function() {
                         console.log(response.statusText);
                     });
 
-}
+}*/
+$scope.sel = [];
+$scope.sel1 = [];
+
+/*$scope.getSelectedOptions = function()  {
+$scope.sel1 = $scope.sel; 
+}*/
+// example callback function (selected options passed one by one)
 
 $scope.update=function(){
             
-            var url = 'http://localhost:3000/students/'+$scope.id, data = $scope.employee,
+            var url = 'http://localhost:3000/subject/'+$scope.id, data = $scope.employee,
             config='contenttype';
 
 $http.put(url, data, config).then(function (response) {
@@ -35,13 +42,13 @@ $http.put(url, data, config).then(function (response) {
 
 }).then(function successCallback(response) {
                        // $scope.employee = response.data ;
-                        alert('student info updated');
-                        window.location.href="www.google.com"
+                        alert('subject info updated');
+                        window.location.href="#!/subject"
 
                     }, function errorCallback(response) {
                         console.log(response.statusText);
                     });
-  ;
+  
                 }
                 $scope.create=function(){
             
@@ -75,12 +82,13 @@ $http.post(url, data, config).then(function (response) {
 
   $scope.gotolist=function(){
 
-  	  alert('Do you want to go back');
-  	                          window.location.href="#!/view1"
+      alert('Do you want to go back');
+                              window.location.href="#!/view1"
 
 
   }
 
-$scope.refreshPageData();
+//$scope.refreshPageData();
+
 
 }]);

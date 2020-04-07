@@ -203,10 +203,26 @@
   ],
   "teacher": [
     {
-      "teachername": "qwer",
+      "teachername": "Ali",
       "teacherphone": "2323232323",
-      "teachersubjects": "bio",
-      "id": 2
+      "mainbooks": [
+        "Mathematics NCERT",
+        "Physics NCERT"
+      ],
+      "id": 3,
+      "teachersubjects": [
+        "Physics",
+        "Chemistry"
+      ]
+    },
+    {
+      "teachername": "Abbas",
+      "teacherphone": "1231231234",
+      "teachersubjects": [
+        "Physics",
+        "Chemistry"
+      ],
+      "id": 4
     }
   ],
   "comments": [
